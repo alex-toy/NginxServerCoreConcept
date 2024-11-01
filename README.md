@@ -34,6 +34,12 @@ curl localhost
 
 sudo systemctl stop nginx
 
+sudo nginx -t
+
+sudo nginx -s reload
+
+curl --header "Host: example.com" localhost
+
 <img src="/pictures/install.png" title="installation"  width="900">
 
 ## 

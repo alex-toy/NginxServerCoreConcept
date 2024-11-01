@@ -1,0 +1,13 @@
+
+//forward lookup zone
+zone "nurul.local" IN {
+    type master;
+    file "/etc/bind/db.nurul.local";
+};
+
+//reverse lookup zone
+zone "0.0.5.in-addr.arpa" IN {
+    type master;
+    file "/etc/bind/db.0.0.5";
+};
+

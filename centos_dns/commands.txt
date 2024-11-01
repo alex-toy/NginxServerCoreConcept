@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=yoIxyMypuHk&list=PLZaC2MLnjptPu3npJFRG2EYRGk0aev7HG&index=2
+
+dnf install bind bind-utils
+
+systemctl status named
+
+ss -tulpn
+
+
+

@@ -1,0 +1,35 @@
+https://www.youtube.com/watch?v=FynQxz8eysY&list=PLZaC2MLnjptPu3npJFRG2EYRGk0aev7HG&index=1
+
+sudo apt install bind9
+sudo apt install dnsutils
+
+named -v
+
+cd /etc/bind
+
+hostnamectl status
+
+# IP address
+hostname -I
+
+dnsdomainname
+
+hostname --fqdn
+
+named-checkconf
+
+named-checkzone nurul.local db.nurul.local
+named-checkzone 0.0.5.in-addr.arpa db.0.0.5
+
+sudo service bind9 restart
+sudo service bind9 status
+
+nslookup www.nurul.local
+
+
+
+
+cat /etc/resolv.conf
+sudo systemctl restart systemd-resolved
+sudo systemctl restart systemd-hostnamed
+
